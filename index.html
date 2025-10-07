@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eren — Character Profile</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Meta for theme colors -->
+  <meta name="theme-color" content="#0b1220">
+</head>
+<body>
+  <div class="page">
+
+    <!-- floating particles (sparks/petals) -->
+    <div id="particles"></div>
+
+    <header class="topbar">
+      <div class="logo">• EREN •</div>
+      <nav class="nav">
+        <a href="#about">عن الشخصية</a>
+        <a href="#skills">مهارات</a>
+        <a href="#troops">الفرق</a>
+        <a href="#weapons">أسلحة</a>
+      </nav>
+      <div class="actions">
+        <button id="themeToggle" aria-label="تبديل الثيم">ثيم</button>
+        <input id="search" placeholder="ابحث..." />
+      </div>
+    </header>
+
+    <main class="card">
+      <!-- left content -->
+      <section class="left">
+        <div class="rank">S RANK</div>
+        <h1 class="name">Eren Yeager<br/><span class="sub">إرين ييغر</span></h1>
+        <p class="bio">
+          إرين ييغر — محارب مُعاد استيقاظه، يمتلك عزيمة قوية لاقتلاع أعدائه. هذه بطاقة تعريفية للشخصية مع
+          لمسات أنميشن وخلفية ديناميكية.
+        </p>
+
+        <div class="info-grid">
+          <div class="info-block">
+            <div class="info-title">الانتماء</div>
+            <div class="info-value">فيلق الاستطلاع</div>
+          </div>
+          <div class="info-block">
+            <div class="info-title">الحالة</div>
+            <div class="info-value">قيد اللعب</div>
+          </div>
+          <div class="info-block">
+            <div class="info-title">العلاقات</div>
+            <div class="info-value">رفقاء الفرقة</div>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn" href="#skills">عرض المهارات</a>
+          <a class="btn ghost" href="#weapons">تفاصيل السلاح</a>
+        </div>
+      </section>
+
+      <!-- right artwork -->
+      <aside class="right">
+        <!-- الصورة: استبدل المسار بالـ PNG/WEBP اللي عندك -->
+        <div class="portrait-wrap">
+          <img id="portrait" src="assets/eren.png" alt="Eren portrait" />
+          <div class="portrait-shadow"></div>
+        </div>
+
+        <!-- sidebar menu (animated) -->
+        <ul class="side-menu">
+          <li data-target="#about" class="active">ABOUT</li>
+          <li data-target="#skills">SKILLS</li>
+          <li data-target="#troops">TROOPS</li>
+          <li data-target="#weapons">WEAPONS</li>
+        </ul>
+      </aside>
+    </main>
+
+    <!-- sections below card -->
+    <section id="about" class="section">
+      <h2>عن الشخصية</h2>
+      <p>
+        هنا تقدر تكتب وصف أطول عن إرين — قصته، قدراته، وتحولاته. اقسم النص أو ضيف صور/ميديا حسب الحاجة.
+      </p>
+    </section>
+
+    <section id="skills" class="section two-col">
+      <div>
+        <h2>المهارات</h2>
+        <ul class="skills-list">
+          <li><strong>قوة هائلة</strong> — مستوى متميز في القتال اليدوي.</li>
+          <li><strong>تحمل</strong> — مقاومة إصابات عالية.</li>
+          <li><strong>قدرات خاصّة</strong> — تحول وتغييرات تكتيكية.</li>
+        </ul>
+      </div>
+      <div class="skill-bars">
+        <div class="bar">
+          <div class="bar-label">قوة</div>
+          <div class="bar-track"><div class="bar-fill" style="--w:92%"></div></div>
+        </div>
+        <div class="bar">
+          <div class="bar-label">سرعة</div>
+          <div class="bar-track"><div class="bar-fill" style="--w:72%"></div></div>
+        </div>
+        <div class="bar">
+          <div class="bar-label">ذكاء قتالي</div>
+          <div class="bar-track"><div class="bar-fill" style="--w:84%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="troops" class="section">
+      <h2>الفرق</h2>
+      <div class="cards">
+        <article class="mini-card">
+          <h3>فيلق الاستطلاع</h3>
+          <p>وحدة الاستكشاف والهجوم خارج الجدران.</p>
+        </article>
+        <article class="mini-card">
+          <h3>فرقة قتال</h3>
+          <p>وحدات متخصصة بالاستراتيجيات الميدانية.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="weapons" class="section">
+      <h2>الأسلحة والمعدات</h2>
+      <ul class="weapons">
+        <li>معدات ثلاثية الأبعاد</li>
+        <li>شفرات هجومية</li>
+        <li>بدلة تحكم</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+EDIT BY: N3N3A VB 🤙✨
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
